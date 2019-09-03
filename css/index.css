@@ -1,1 +1,281 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/* Variables*/
+/* Mix-Ins*/
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+html,
+body {
+  height: 100%;
+  background-color: #62C8E4;
+  background-image: url("https://i.pinimg.com/originals/7d/a6/96/7da696f1987d39249d42946f331ccc1b.jpg");
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-circle {
+  border-radius: 50%;
+}
+/* Header Styles */
+header {
+  width: 100%;
+  display: flex;
+  background-image: url("https://i.pinimg.com/originals/7d/a6/96/7da696f1987d39249d42946f331ccc1b.jpg");
+}
+header nav {
+  margin-top: 40px;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  margin: 28px 0 0 91px;
+}
+/* Contact Styles */
+.cta {
+  /* Desktop Styling*/
+  display: flex;
+  flex-direction: row;
+  margin-top: 72px;
+  justify-content: space-evenly;
+  width: 75%;
+  border: 2px white solid;
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 82px 0 0;
+  width: 33%;
+}
+.cta div {
+  width: 33%;
+}
+.cta .contact {
+  width: 33%;
+  font-size: 22px;
+}
+@media (max-width: 500px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+}
+/* Intro Styles*/
+.intro {
+  background-color: #62C8E4;
+  border: 2px white solid;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+@media (max-width: 500px) {
+  .intro {
+    width: 400px;
+    padding: 0 10px;
+  }
+}
+/* Work History Styles */
+.content {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 25px;
+    width: 100%;
+  }
+}
+.content .work-history {
+  background-color: #62C8E4;
+  border: 2px white solid;
+  margin-left: 50px;
+  padding: 0 25px;
+  font-size: 17px;
+  width: 700px;
+}
+@media (max-width: 500px) {
+  .content .work-history {
+    width: 400px;
+  }
+}
+.content p {
+  text-align: center;
+}
+.content b {
+  font-weight: bold;
+}
+.content ul {
+  list-style-type: disc;
+}
+.content .awards {
+  margin-left: 15px;
+  height: 300px;
+}
+.content .award-img {
+  height: 250px;
+  width: 350px;
+}
+h1 {
+  font-size: 55px;
+  font-family: "Orbitron", sans-serif;
+}
+h2 {
+  font-size: 42px;
+  font-family: "Orbitron", sans-serif;
+}
